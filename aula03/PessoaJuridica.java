@@ -1,7 +1,6 @@
 package aula03;
 
-public class PessoaJuridica extends Funcionarios{
-	
+public class PessoaJuridica extends Funcionario{
 	private String cnpj;
 
 	public String getCnpj() {
@@ -11,5 +10,5 @@ public class PessoaJuridica extends Funcionarios{
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
-
+	
 }
