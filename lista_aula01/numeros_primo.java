@@ -3,7 +3,7 @@ package lista_aula01;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class numero_primo {
+public class numeros_primo {
 
 	public static void main(String[] args) {
 
