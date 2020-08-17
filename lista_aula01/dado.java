@@ -13,47 +13,39 @@ public class dado {
 		int contaQuatro = 0;
 		int contaCinco = 0;
 		int contaSeis = 0;
-		int freq1, freq2, freq3, freq4, freq5, freq6;
 
 		Random gerador = new Random();
 
 		for (int i = 0; i < 20; i++) {
 			numerosDoDado[i] = gerador.nextInt(6) + 1;
-
-			switch (numerosDoDado[i]) {
-			case 1: {
-				contaUm += 1;;
-				freq1 = contaUm/20;
+		}
+		
+		for (int j: numerosDoDado) {
+			if (j == 1) {
+				contaUm += 1;
 			}
-			case 2: {
+			if (j == 2) {
 				contaDois += 1;
-				freq2 = contaUm/20;
 			}
-			case 3: {
+			if (j == 3) {
 				contaTres += 1;
-				freq3 = contaUm/20;
 			}
-			case 4: {
+			if (j == 4) {
 				contaQuatro += 1;
-				freq4 = contaUm/20;
 			}
-			case 5: {
+			if (j == 5) {
 				contaCinco += 1;
-				freq5 = contaUm/20;
 			}
-			case 6: {
+			if (j == 6) {
 				contaSeis += 1;
-				freq6 = contaUm/20;
-			}
-			default:
-				throw new IllegalArgumentException("Unexpected value: " + numerosDoDado[i]);
 			}
 		}
-		System.out.println("A frequencia do numero 1 é "+freq1);
-		System.out.println("A frequencia do numero 2 é "+freq2);
-		System.out.println("A frequencia do numero 3 é "+freq3);
-		System.out.println("A frequencia do numero 4 é "+freq4);
-		System.out.println("A frequencia do numero 5 é "+freq5);
-		System.out.println("A frequencia do numero 6 é "+freq6);
+		System.out.println("A frequencia do numero 1 é " + contaUm/20.0);
+		System.out.println("A frequencia do numero 2 é " + contaDois/20.0);
+		System.out.println("A frequencia do numero 3 é " + contaTres/20.0);
+		System.out.println("A frequencia do numero 4 é " + contaQuatro/20.0);
+		System.out.println("A frequencia do numero 5 é " + contaCinco/20.0);
+		System.out.println("A frequencia do numero 6 é " + contaSeis/20.0);
+		System.out.println("E a soma delas é igual a " + (contaUm+contaDois+contaTres+contaQuatro+contaCinco+contaSeis)/20.0);
 	}
 }
