@@ -11,7 +11,7 @@ public class Supervisor extends PessoaFisica {
 	}
 
 	public double getBonificacao() {
-		return bonificacao;
+		return this.bonificacao * this.getSalario();
 	}
 
 	@Override

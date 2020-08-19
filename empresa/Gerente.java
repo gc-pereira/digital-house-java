@@ -11,12 +11,16 @@ public class Gerente extends PessoaFisica {
 	}
 
 	public double getBonificacao() {
-		return bonificacao * this.getSalario();
+		return this.bonificacao * this.getSalario();
 	}
 
 	@Override
 	public double contraCheque() {
 		return this.getSalario() * (1 + this.bonificacao);
+	}
+	
+	public void demitir(Supervisor supervisor) {
+		System.out.println("O funcionário foi demitido!");
 	}
 
 }
