@@ -2,7 +2,7 @@ package aula03.bancoDigitalHouse;
 
 public class ContaCorrente extends Conta {
 
-	public ContaCorrente(int numero, int agencia, double saldo, String cliente, int digito) {
+	public ContaCorrente(int numero, int agencia, double saldo, Cliente cliente, int digito) {
 		super(numero, agencia, saldo, cliente);
 	}
 
