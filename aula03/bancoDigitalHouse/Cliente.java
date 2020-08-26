@@ -10,11 +10,14 @@ public class Cliente {
 	private String endereco;
 	private List<Conta> contas = new ArrayList<>();
 	
-	public Cliente(String nome, String cpf, String endereco) {
+
+	public Cliente(String nome, String cpf, String endereco, List<Conta> contas) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.endereco = endereco;
+		this.contas = contas;
 	}
+
 
 	public String getNome() {
 		return nome;
@@ -28,12 +31,7 @@ public class Cliente {
 		return endereco;
 	}
 	
-	public void addConta(Conta conta) {
-		conta.setCliente(this);
-		this.contas.add(conta);
-	}
-	
-	public List<Conta> getContas() {
-		return contas;
+	public void getContas() {
+		System.out.println(contas.size());
 	}
 }

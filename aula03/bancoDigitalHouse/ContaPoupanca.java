@@ -2,8 +2,8 @@ package aula03.bancoDigitalHouse;
 
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(int numero, int agencia, double saldo, Cliente cliente) {
-		super(numero, agencia, saldo, cliente);
+	public ContaPoupanca(int numero, int agencia, double saldo) {
+		super(numero, agencia, saldo);
 	}
 
 	@Override
