@@ -1,4 +1,4 @@
-package aula1;
+package aula01;
 
 public class programa {
 	public static void main(String[] args) {
